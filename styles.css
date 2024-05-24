@@ -1,0 +1,273 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background-image: url("img1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  max-width: 30rem;
+}
+
+.cta {
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.best-sellers,
+.travel-essentials {
+  padding: 2rem;
+}
+
+.best-sellers h2,
+.travel-essentials h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.best-sellers ul,
+.travel-essentials ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.best-sellers li,
+.travel-essentials li {
+  flex-basis: calc(33.333% - 2rem);
+  margin: 1rem;
+}
+
+.best-sellers li img,
+.travel-essentials li img {
+  width: 100%;
+}
+
+.offer {
+  background-color: #f2f2f2;
+  padding: 2rem;
+  text-align: center;
+}
+
+.offer h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.offer p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.photo-row {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.photo-row li {
+    flex: 0 0 20%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.photo-row li img {
+    transition: transform 0.3s ease; /* Додаємо плавний ефект при зміні масштабу */
+}
+
+.photo-row li img:hover {
+    transform: scale(1.1); /* Збільшуємо масштаб зображення при наведенні курсору */
+}
+.offer {
+    display: flex;
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+    margin-top: 50px; /* Наприклад, змінюємо відступ від верху відповідно до ваших потреб */
+}
+
+.offer-content {
+    flex: 1; /* Розтягуємо контент на всю доступну ширину */
+    text-align: right; /* Вирівнюємо текст по правому краю */
+    padding-right: 20px; /* Додаємо відступ справа від тексту */
+}
+
+.offer-image {
+    flex: 0 0 auto; /* Не розтягуємо зображення */
+    max-width: 50%; /* Змінюємо максимальну ширину зображення відповідно до потреб */
+    margin-left: auto; /* Залишаємо зображення прижатим до лівого краю */
+}
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    width: fit-content; /* Робить контейнер ширини вмісту */
+
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+}
+
+.slideshow img {
+    display: none;
+    max-width: 100%;
+    transition: transform 0.3s ease; /* Плавний ефект при зміні масштабу */
+}
+.slideshow img:hover {
+    transform: scale(1.1); /* Збільшуємо масштаб зображення при наведенні курсору */
+}
+
+.slideshow img:first-child {
+    display: block; /* Показує перше зображення по замовчуванню */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.5); /* Прозорий фон стрілок */
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+h3 {
+    text-align: center; /* Вирівнює текст по центру */
+}
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-link:hover {
+    background-color: #333;
+    color: #fff;
+}
+.cta {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5733;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta:hover {
+    transform: translateY(-3px); /* Зсуваємо кнопку вгору при наведенні */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Додаємо тінь при наведенні */
+}
+
+.cta:active {
+    transform: translateY(1px); /* Зсуваємо кнопку вниз при натисканні */
+    box-shadow: none; /* Видаляємо тінь при натисканні */
+}
+.photos {
+    display: flex; /* Встановлюємо flex контейнер */
+}
+
+.photos img {
+    flex: 1; /* Розтягуємо всі фото на однаковий розмір */
+    margin: 0 10px; /* Додаємо відступи між фото */
+    max-width: 300px; /* Максимальна ширина кожного фото */
+    height: auto; /* Автоматична висота, щоб зберегти пропорції */
+}
+#footer {
+  display: flex;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section h3 {
+  margin-top: 0; /* Видаляємо верхній відступ для заголовка */
+  border-top: 2px solid #ccc; /* Додаємо лінію розмежування зверху тексту */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px; /* Відступ між пунктами списку */
+}
+
